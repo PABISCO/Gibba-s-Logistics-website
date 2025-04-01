@@ -1,0 +1,42 @@
+import React from 'react';
+import { ArrowRight } from 'lucide-react';
+
+const Hero = () => {
+  return (
+    <section id="home" className="relative h-screen flex items-center justify-center bg-gradient-to-r from-indigo-900 to-blue-900 text-white">
+      <div className="absolute inset-0">
+        <img
+          src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80"
+          alt="Logistics Background"
+          className="w-full h-full object-cover opacity-20"
+        />
+      </div>
+      
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h1 className="text-5xl md:text-6xl font-bold mb-6">
+          Global Logistics Solutions
+        </h1>
+        <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
+          Your trusted partner in worldwide cargo transportation and logistics services
+        </p>
+        <div className="flex justify-center gap-4">
+          <a
+            href="#contact"
+            className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700"
+          >
+            Get Started
+            <ArrowRight className="ml-2 h-5 w-5" />
+          </a>
+          <a
+            href="#services"
+            className="inline-flex items-center px-6 py-3 border border-white text-base font-medium rounded-md text-white hover:bg-white hover:text-indigo-900"
+          >
+            Our Services
+          </a>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Hero;
